@@ -26,14 +26,21 @@
         <h1>Faites un don :</h1>
 
     </body>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="yanis.kergall@gmail.com">
-        <input type="hidden" name="item_name" value="Soutien">
-        <input type="hidden" name="amount" value="5.00"> <!-- Exemple de montant par défaut -->
-        <input type="hidden" name="currency_code" value="EUR">
-        <input type="image" src="https://www.paypalobjects.com/fr_FR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - Paiement sécurisé">
-        <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+        <input type="hidden" name="business" value="yanis.kergall@gmail.com"> <!-- Remplace avec ton adresse email PayPal -->
+        <input type="hidden" name="item_name" value="Don 5€"> <!-- Remplace avec le nom de ton produit -->
+        <input type="hidden" name="amount" value="5.00"> <!-- Remplace avec le prix de ton produit -->
+        <input type="hidden" name="currency_code" value="EUR"> <!-- Remplace avec la devise souhaitée -->
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="1">
+        <input type="hidden" name="no_shipping" value="1">
+        <input type="hidden" name="rm" value="2">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
+    
+    </form>
+    
     
 </html>
